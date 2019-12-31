@@ -1,0 +1,14 @@
+<!--pages/list/list.wxml-->
+<import src='/pages/template/list-template.wxml' />
+<view>
+	<!-- 轮播图区 -->
+	<swiper indicator-dots autoplay indicator-color="rgba(255, 255, 255, .3)" indicator-active-color="#fff">
+		<swiper-item wx:for='{{dataArr}}' wx:key='index' data-ind="{{index}}" catchtap="toDetail">
+			<image src="{{item.detail_img}}"></image>
+		</swiper-item>
+	</swiper>
+	<!-- 内容区 -->
+	<view wx:for='{{dataArr}}' wx:key='index' data-ind="{{index}}" catchtap="toDetail">
+		<template is="listTmp" data="{{...item}}"></template>
+	</view>
+</view>

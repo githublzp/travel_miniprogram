@@ -1,0 +1,67 @@
+.listTmpContainer {
+  position: relative;
+  padding: 20rpx;
+}
+
+.listTmpContainer::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: calc(100% - 40rpx);
+  height: 1rpx;
+  background-color: #eee;
+}
+
+.avata-date {
+  display: flex;
+  align-items: center;
+}
+
+.avata-date image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 40rpx;
+}
+
+.jingdian {
+  margin: 20rpx 0;
+}
+
+.ddNmae {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.ddPic {
+  width: 100%;
+  height: 350rpx;
+  margin: 20rpx 0;
+}
+
+.ddDesc {
+  display: block;
+  font-size: 28rpx;
+  text-indent: 56rpx;
+}
+
+.collec-view {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.collec-view image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.collec-view text {
+  font-size: 28rpx;
+}
+
+.viewcount {
+  margin-left: 40rpx;
+}

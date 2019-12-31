@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/movie/movie",
+    "pages/moviedetail/moviedetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#827046",
+    "navigationBarTitleText": "sun",
+    "navigationBarTextStyle": "white"
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "tabBar": {
+    "color": "#767676",
+    "selectedColor": "#1F4BA5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "景点",
+        "iconPath": "/imgs/tab/yuedu.png",
+        "selectedIconPath": "/imgs/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "/imgs/tab/dianying.png",
+        "selectedIconPath": "/imgs/tab/dianying_hl.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

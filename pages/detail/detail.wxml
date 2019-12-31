@@ -1,0 +1,25 @@
+<!--pages/detail/detail.wxml-->
+<view class="detailContainer">
+	<!-- 轮播图区 -->
+	<swiper indicator-dots autoplay indicator-color="rgba(255, 255, 255, .3)" indicator-active-color="#fff">
+		<swiper-item wx:for='{{jdInfo.detail_img_list}}' wx:key='index'>
+			<image class="jdPic" src="{{item.detailImgUrl}}"></image>
+		</swiper-item>
+	</swiper>
+	<view class="jingdian">
+		<text class="jdName">{{jdInfo.title}}</text>
+		<view class="coll-share">
+			<image src="/imgs/icon/share.png" catchtap="share"></image>
+			<image catchtap="toggleCollec" src="{{isCollected ? '/imgs/icon/collection.png' : '/imgs/icon/collection-anti.png'}}"></image>
+      <image class="musicicon" catchtap="toggleMusic" src="{{isMusicPlay ? '/imgs/music/music-start.png' : '/imgs/music/music-stop.png'}}"></image>
+		</view>
+		<view class="jdDetail">
+			<text class="jdTitle">{{jdInfo.tit1}}</text>
+			<text>{{jdInfo.tit1Info}}</text>
+			<text class="jdTitle">{{jdInfo.tit2}}</text>
+			<text>{{jdInfo.tit2Info}}</text>
+			<text class="jdTitle">{{jdInfo.tit3}}</text>
+			<text>{{jdInfo.tit3Info}}</text>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,46 @@
+/* pages/movie/movie.wxss */
+.movieCotainer {
+  position: relative;
+  display: flex;
+  padding: 20rpx;
+}
+.movieCotainer::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: calc(100% - 40rpx);
+  height: 1rpx;
+  background-color: #eee;
+}
+.moviePic {
+  width: 128rpx;
+  height: 128rpx;
+}
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 20rpx;
+}
+.movieName {
+  width: 70%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 32rpx;
+}
+.movieInfo > text:not(.movieName){
+  font-size: 28rpx;
+  color: #666;
+}
+.pingfen {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  font-size: 40rpx;
+  color: red;
+  font-weight: bold;
+}

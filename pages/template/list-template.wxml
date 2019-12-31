@@ -1,0 +1,19 @@
+<template name="listTmp">
+	<view class="listTmpContainer">
+		<view class="avata-date">
+			<image src="{{avatar}}"></image>
+			<text>{{date}}</text>
+		</view>
+		<view class="jingdian">
+			<text class="ddNmae">{{title}}</text>
+			<image src="{{detail_img}}" class="ddPic"></image>
+			<text class="ddDesc">{{detail_content}}</text>
+		</view>
+		<view class="collec-view">
+			<image src="{{detail_love_image1}}"></image>
+			<text>{{love_count}}</text>
+			<image src="{{detail_love_image2}}" class="viewcount"></image>
+			<text>{{attention_count}}</text>
+		</view>
+	</view>
+</template>
